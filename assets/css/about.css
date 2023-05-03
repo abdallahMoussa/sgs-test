@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+}
+
+body {
+  background: url(../images/about/bg.png);
+  box-sizing: border-box;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  mix-blend-mode: difference;
+  /* max-width: 100vw;
+  overflow-x: hidden; */
+}
+
+.about_landing {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.about_title {
+  font-size: 4vw;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;
+  mix-blend-mode: difference;
+}
+
+.zoom_out_font {
+  animation: fontSize 1.8s linear forwards;
+}
+
+.about_desc {
+  margin-top: 20vh;
+}
+
+.about_desc p {
+  font-size: 1.5vw;
+}
+
+.about_desc b {
+  display: block;
+  margin-top: 10%;
+  /* float: right; */
+  text-align: right;
+  width: 100%;
+  margin-left: 5rem;
+}
+
+.quality_section,
+.finance_section {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.quality_section {
+  justify-content: center;
+}
+
+.quality_section p {
+  font-size: 1.7vw;
+}
+
+@keyframes fontSize {
+  0% {
+    font-size: 4vw;
+  }
+  100% {
+    font-size: 2.5vw;
+  }
+}
+
+#global {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.global_content {
+  width: 80%;
+  /* background-color: red; */
+}
+
+.global_content img {
+  width: 30%;
+  text-align: center;
+}
+
+#focus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.focus_section {
+  width: 70%;
+  margin: auto;
+}
+
+.global_img {
+  transition: all 1s ease 0s;
+}
+
+.slide_img {
+  transition: all 1s ease 0s;
+  transform: translateX(-27vw) scale(0.57);
+  /* position: fixed; */
+  /* top: 12vh;
+  z-index: 100; */
+  opacity: 1;
+}
+
+.office_content {
+  /* position: absolute;
+  bottom: 10vh;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;*/
+  transform: translateY(-30vh);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.focus_desc {
+  /* margin-top: 5vh !important;
+  margin-bottom: 5vh !important; */
+  min-height: 20vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .focus_section,
+  .finance_section,
+  .about_landing {
+    width: 90%;
+  }
+
+  .global_content img {
+    width: 80%;
+    text-align: center;
+  }
+
+  .quality_section p {
+    font-size: 0.9rem;
+  }
+
+  .global_content {
+    width: 90%;
+  }
+
+  .about_landing h1 {
+    top: 15%;
+  }
+
+  @keyframes fontSize {
+    0% {
+      font-size: 3rem;
+    }
+    100% {
+      font-size: 1.5rem;
+    }
+  }
+
+  .about_desc p {
+    font-size: 0.8rem;
+  }
+
+  .about_desc b {
+    font-size: 0.8rem;
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .global_content,
+  .focus_section,
+  .finance_section,
+  .about_desc b {
+    font-size: 2.5rem;
+  }
+}

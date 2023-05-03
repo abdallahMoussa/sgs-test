@@ -1,0 +1,27 @@
+body {
+    background-image: url("/assets/images/careers/Rectangle.png");
+    background-size: contain;
+    background-color: #f8f8f8;
+}
+.preloader {
+    z-index: 100000000;
+}
+* {
+    transition: 1s;
+}
+
+.circle {
+    width: 7px;
+    height: 7px;
+    margin: 5px;
+    background-color: #cbd5e1;
+    border-radius: 50%;
+}
+li {
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 1000px) {
+    li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+.wheel {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#head-title {
+  width: 55%;
+  text-align: center;
+  font-family: fantasy;
+  transition: 0.5s;
+  position: absolute;
+  top: 10%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+#head-title h2 {
+  color: #444;
+}
+#head-title p {
+  color: #777;
+}
+
+.wheel-cont {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 345px;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 800px) {
+  #head-title {
+    width: 100%;
+  }
+  .wheel-cont {
+    margin-top: 50px;
+    transform: scale(1);
+  }
+}
+.col {
+  width: 95px;
+  height: 100%;
+}
+.hexa {
+  width: 130px;
+  height: 125px;
+  position: relative;
+}
+.hexa:not(.hexa:first-child) {
+  margin-top: -14px;
+}
+.hexa-image {
+  width: 130px;
+  height: 125px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+}
+#hexa-main {
+  opacity: 1;
+}
+
+.hexa-text {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+}
+
+.icon {
+  width: 40%;
+  z-index: 10;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.col1,
+.col3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pos {
+  transform: scale(1.4);
+  transition: 0.5s;
+  z-index: 10;
+}
+.pos0 {
+  margin: -15px 20px 0px -25px;
+}
+.pos1 {
+  margin: 15px 20px 0px -25px;
+}
+.pos2 {
+  margin-top: -25px;
+}
+.pos3 {
+  transform: scale(1.02) !important;
+}
+.pos4 {
+  margin-top: 25px;
+}
+.pos5 {
+  margin: -15px 0px 0px 25px;
+}
+.pos6 {
+  margin: 15px 0px 0px 25px;
+}
+.z100 {
+  z-index: 100;
+}
+.z1 {
+  z-index: 1;
+}
+
+/* Shubham */
+.wheel {
+  display: none;
+}
+
+.hex-surround {
+  transition: 0.5s all;
+}
+
+.main-hex-img {
+  transition: 0.5s all;
+  /* display: none !important; */
+  z-index: 1000000;
+}
