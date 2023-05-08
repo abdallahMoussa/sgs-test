@@ -1,0 +1,482 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGS investment</title>
+    <link rel="stylesheet" href="assets/css/investment.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+
+
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+
+
+    
+  </head>
+
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 px-10 header-nav fixed-top"
+    >
+      <div class="logo w-20">
+        <img id="logo" src="assets/images/logo.png" />
+      </div>
+      <div class="side-nav flex">
+        <div class="button mr-10">
+          <a
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
+        </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <aside class="side-bar">
+      <div class="close-container">
+        <span class="bar-closer"> &times;</span>
+      </div>
+
+      <ol>
+        <li class="side-link">
+          <div class="nav-main nav-one">
+            <h6 class="">DaaS-SERVICES</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#fff"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+            <li>
+              <a href="#">Solutions</a>
+            </li>
+            <li>
+              <a href="#">SGS ONE</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-two">
+            <h6 class="">PARTNERSHIP</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#fff"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+            <li>
+              <a href="#">Partnership program</a>
+            </li>
+            <li>
+              <a href="#">Apply for partnership</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-three">
+            <h6 class="">CAREER</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#fff"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
+            <li>
+              <a href="#">Open positions</a>
+            </li>
+            <li>
+              <a href="/careers.html">General Application</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="side-link">
+          <div class="nav-main nav-four">
+            <h6 class="">ABOUT US</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#fff"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+            <li>
+              <a href="#">About SGS</a>
+            </li>
+            <li>
+              <a href="#">Blog & News</a>
+            </li>
+            <li>
+              <a href="#">Team</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+
+    <div class="preloader">
+      <img src="./assets/images/Gear-0.2s-200px.gif" class="gif_pre" alt="" />
+    </div>
+
+    <main class="">
+      <div class="header">
+        <div class="bg-investment ">
+          <img src="assets/images/investment/bg-investment.png" />
+        </div>
+        <div class="header-texture w-full top-0 absolute">
+            <img class="investment absolute" src="assets/images/investment/investment.png" />
+            <img class="we-are-ready absolute" src="assets/images/investment/We are ready.png" />
+            <img class="our-story absolute" src="assets/images/investment/Our story.png" />
+        </div>
+      </div>
+
+      <div class="solutions pb-10">
+       <div class=" pt-[5vw] pl-[4vw] flex">
+        <div class="solutions-images flex flex-col items-end ">
+          <img class="scalable w-[40vw]" src="assets/images/investment/Scalable Global Solutions.png" />
+          <img class="by-numbers right-0 w-[13vw] mt-4" src="assets/images/investment/by the numbers.png" />
+        </div>
+        <hr class="border-1 w-[60vw] ml-4 mt-5 border-slate-800"> 
+       </div>
+       <div class="solutions-content text-2xl px-[4vw] py-[6vw]">
+        <p>
+          Scalable Global Solutions is a name that stands with excellence and
+          the highest industry standards. With a proven track record of success
+          across countless industries, our investment opportunity represents a unique chance
+          to be part of something truly transformative. Our impressive results, which have already
+          attracted 14 investors and €1.9M in raised investments, speak volumes about our unmatched
+          ability to help businesses soar to new heights.
+        </p>
+       </div>       
+       <div class=" px-[4vw] flex">
+         <hr class="border-1 w-[100vw]  mt-5 border-slate-800"> 
+        <!-- <span class="min-w-max text-md text-slate-800 font-bold pl-[2vw] pt-[6px]">SCHEDULE A CALL</span> -->
+       </div> 
+      </div>
+
+      <div class="pitchBook relative">
+        <div class="bg-pitchBook w-full">
+            <img class="w-full" src="assets/images/investment/almeria-1 1.png" />
+        </div>
+       <div class="overlay absolute w-full top-0">
+
+          <div class="content-pitchBook  flex flex-wrap justify-center  pt-[5vw] px-[2vw]">
+            
+            <div class="card  group card-text ">
+              <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                  <b class="text-6xl block  ">€500K</b><br>
+                  <span class="text-2xl font-bold">INVESTMENTS IN 2022</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card card-pic">
+              <div class="w-full h-full  absolute top-0">
+                <img class="grayscale hover:grayscale-0 hover:scale-105 duration-300" src="assets/images/investment/card-pic-1.png" />
+              </div>
+            </div>
+
+            <div class="card  group card-text ">
+              <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                  <b class="text-6xl block  ">232%</b><br>
+                  <span class="text-2xl font-bold">YOY GROWTH</span>
+                </p>
+              </div>
+            </div>
+            
+            <div class="card card-pic">
+              <div class="w-full h-full  absolute top-0">
+                <img class="grayscale hover:grayscale-0 hover:scale-105 duration-300" src="assets/images/investment/card-pic-2.png" />
+              </div>
+            </div>
+            
+            <div class="card card-pic">
+              <div class="w-full h-full  absolute top-0">
+                <img class="grayscale hover:grayscale-0 hover:scale-105 duration-300" src="assets/images/investment/card-pic-3.png" />
+              </div>
+            </div>
+            
+            <div class="card  group card-text ">
+              <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                  <b class="text-7xl block  ">14</b><br>
+                  <span class="text-2xl font-bold">
+                    INVESTORS
+                    </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card card-pic">
+              <div class="w-full h-full  absolute top-0">
+                <img class="grayscale hover:grayscale-0 hover:scale-105 duration-300" src="assets/images/investment/card-pic-4.png" />
+              </div>
+            </div>
+
+            <div class="card  group card-text ">
+              <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                  <b class="text-7xl block  ">11</b><br>
+                  <span class="text-2xl font-bold">
+                    CLIENTS
+                    </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card  group card-text ">
+              <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                  <b class="text-7xl block  ">€3M</b><br>
+                  <span class="text-2xl font-bold">
+                    IN SIGNED DEALS FOR 2023+
+                    </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card  group card-text ">
+              <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                  <b class="text-7xl block  ">€70K</b><br>
+                  <span class="text-xl font-bold">
+                    MONTHLY RECURRING REVENUE
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="rectangle-card">
+                <img class="w-full bg-red-700" src="assets/images/investment/Group 23.png" />
+            </div>
+
+            <div class="card rectangle-card">
+              <div class="w-full h-full  absolute top-0">
+                <img class="grayscale hover:grayscale-0 hover:scale-105 duration-300" src="assets/images/investment/card-pic-5.png" />
+              </div>
+            </div>
+
+            <div class="card  group card-text ">
+              <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                  <b class="text-7xl block  ">31%</b><br>
+                  <span class="text-xl font-bold">
+                    COMPANY VALUATION YOY GROWTH
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="card  group card-text ">
+              <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                  <b class="text-7xl block  ">€1.9M</b><br>
+                  <span class="text-xl font-bold">
+                    TOTAL INVESTMENT RAISED
+                  </span>
+                </p>
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="map mt-[5vw]">
+            <div class=" pt-[5vw] pl-[4vw] flex">
+              <div class=" flex flex-col items-end ">
+                <img class="scalable w-[25vw]" src="assets/images/investment/Investors map.png" />
+                <img class="by-numbers right-0 w-[13vw] mt-4" src="assets/images/investment/by the numbers.png" />
+              </div>
+              <hr class="border-1 w-[90vw] ml-4 mt-5 border-slate-200"> 
+            </div>
+            <div class="map-content h-64">
+                <img class="w-1/2 m-auto" src="assets/images/investment/world.svg" />  
+            </div>
+           
+          </div>
+          <div class="seeking">
+            <div class=" pt-[5vw] pl-[4vw] flex">
+              <div class=" flex flex-col items-start ">
+                <img class="scalable w-[70vw]" src="assets/images/investment/Seeking a High.png" />
+                <img class="right-0 w-[13vw] ml-1 mt-4" src="assets/images/investment/look no further.png" />
+              </div>
+              <hr class="border-1 w-[30vw] ml-4 mt-5 border-slate-200"> 
+            </div>
+
+            <div class="content-pitchBook  flex flex-wrap justify-center  pt-[5vw] px-[2vw]">
+            
+                <div class="card  group card-text ">
+                  <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                    <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                      <b class="text-6xl block  ">€1M</b><br>
+                      <span class="text-2xl font-bold">
+                        INVESTMENT ROUND
+                      </span> 
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card  group card-text ">
+                  <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                    <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                      <b class="text-6xl block  ">13%</b><br>
+                      <span class="text-2xl font-bold">
+                        RAISED
+                      </span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card  group card-text ">
+                  <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                    <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                      <b class="text-5xl block  ">30.09.2023.</b><br>
+                      <span class="text-2xl font-bold">CLOSING DATE</span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="card  group card-text ">
+                  <div class="w-full h-full border-2 border-red-700  absolute top-0 group-hover:border-white group-hover:bg-white">
+                    <p class="card-cont group-hover:cursor-default group-hover:text-red-700">
+                      <b class="text-6xl block  ">€115</b><br>
+                      <span class="text-2xl font-bold">SHARE PRICE</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+       </div>
+       <div class="chart h-96 w-10/12 m-auto bg-slate-300 mb-[8vw]">
+          chart
+       </div>
+       
+       <div class="invest-team">
+        <div class=" px-[9vw] flex">
+          <hr class="border-[1px] w-[50vw]  mt-5 border-slate-800"> 
+          <span class="min-w-max text-3xl text-slate-800 font-bold px-[2vw]">Investment Team</span>
+          <hr class="border-[1px] w-[50vw]  mt-5 border-slate-800"> 
+         </div>
+         <div class="team-cont text-center pt-[3vw]">
+            <span>For your convenience, please contact us for any question or information.</span>
+            <div class="team flex flex-wrap justify-center space-x-20  mt-[8vw]">
+              <div class="team-card">
+                  <img class="w-44 rounded-full mb-6" src="assets/images/investment/vector1.png" />
+                  <span class="text-xl text-black">Marko Dubroja</span>
+                  <p class="phone flex justify-center mt-2">
+                    <img class="h-5 m-1" src="assets/images/investment/phone.png"  />
+                    <span class="text-xl text-black">+385915136117</span>
+                  </p>
+                  <div class="icons flex space-x-3 justify-center mt-6">
+                    <img class="h-7 mt-[3px]" src="assets/images/investment/gmail 1.png"  />
+                    <img class="h-9" src="assets/images/investment/linked.png"  />
+
+                  </div>
+              </div>
+
+              <div class="team-card">
+                <img class="w-44 rounded-full mb-6" src="assets/images/investment/vector2.png" />
+                <span class="text-xl text-black">Maja Pekas</span>
+                <p class="phone flex justify-center mt-2">
+                  <img class="h-5 m-1" src="assets/images/investment/phone.png"  />
+                  <span class="text-xl text-black">+385917618117</span>
+                </p>
+                <div class="icons flex space-x-3 justify-center mt-6">
+                  <img class="h-7 mt-[3px]" src="assets/images/investment/gmail 1.png"  />
+                  <img class="h-9" src="assets/images/investment/linked.png"  />
+
+                </div>
+            </div>
+            </div>
+         </div>
+         <a class="w-[10vw] bg-red-700 m-auto block min-w-max text-white px-4 py-3 mt-28 hover:scale-105 duration-300 hover:drop-shadow-xl hover:bg-red-800" href="#">SCHEDULE A CALL</a>
+       </div>
+
+      </div>
+
+    </main>
+    <footer class="w-full flex flex-wrap justify-between bg-[#1f1f1f] mt-20 pt-16 px-12 pb-2">
+        <div class="follow w-[300px]">
+            <span class="text-white text-xl">FOLLOW US</span>
+            <div class="social-icons mt-8 ml-2 flex  space-x-3">
+                <img class="w-5 hue-rotate-30" src="assets/images/investment/facebook.png" />
+                <img class="w-5 hue-rotate-30" src="assets/images/investment/instagram.png" />
+                <img class="w-5 hue-rotate-30" src="assets/images/investment/youtube.png" />
+                <img class="w-5 hue-rotate-30" src="assets/images/investment/linkedin.png" />
+                <img class="w-5 hue-rotate-30" src="assets/images/investment/twitter.png" />
+                <img class="w-5 hue-rotate-30" src="assets/images/investment/tiktok.png" />
+            </div>
+        </div>
+        <div class="subscribe relative">
+            <span class="text-white font-bold">SUBSCRIBE TO OUR NEWSLETTER</span><br>
+            <span id="email_span" class="text-[7pt] absolute text-white bottom-6 ">EMAIL*</span>
+            <input id="email_input" class="mt-7 w-full absolute bg-transparent border-b-[1px] z-10 border-slate-400 outline-none " />
+        </div>
+        <div class="contact w-full flex flex-wrap text-slate-300 mt-14 space-x-8">
+            <span>+385 1 353 5930</span>
+            <span>+385 91 557 36 24</span>
+            <span>business@sgs-daas.com</span>
+        </div>
+    </footer>
+    <script>
+      window.addEventListener('load', function () {
+        document.querySelector('.preloader').style.display = 'none';
+      });
+    </script>
+
+      </body>
+</html>
