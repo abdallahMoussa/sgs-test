@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #525252;
+  font-family: sans-serif;
+}
+
+.bg-investment{
+  width: 100%;
+  border-bottom: 20px solid #222a35;
+}
+.bg-investment img{
+  width: 100%;
+}
+.we-are-ready{
+  width: 44vw;
+  margin: 15vw 0 0 4vw;
+}
+.investment{
+  left: 45vw;
+  top: 4vw;
+  width: 10vw;
+  max-width: 150px;
+  min-width: 50px;
+}
+.our-story{
+  width: 23vw;
+  top: 50vw;
+  left: 5vw;
+}
+
+.solutions-images{
+  width: 40vw;
+}
+
+.card {
+  position: relative;
+  width: 23%;
+  min-width: 280px;
+  min-height: 280px;
+  padding-top: 23%;
+  margin: 10px;
+}
+.card img{
+  width: 100%;
+}
+
+.card-cont {
+  position:  absolute;
+  width: 90%;
+  top: 30%;
+  left: 5%;
+  color: white;
+  text-align: center;
+}
+.rectangle-card{
+  width: calc(46% + 20px);
+  min-width: 580px;
+  background: #000;
+  margin: 10px;
+}
+.social-icons img{
+  filter: invert(.5);
+  transition: .3s;
+
+}
+.social-icons img:hover{
+  filter: invert(1);
+  cursor: pointer;
+  transition: .5s;
+}
+#chartdiv {
+  width: 50%;
+  margin: auto;
+  /* height: 500px; */
+}
+@media screen and (max-width:700px) {
+  .investment{
+    top: 10vw;
+  }
+  .solutions-content p{
+    font-size: 10pt;
+    line-height: 20px;
+  }
+}
