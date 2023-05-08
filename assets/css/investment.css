@@ -71,6 +71,7 @@ body {
   width: calc(46% + 20px);
   margin: 10px;
   min-width: 580px;
+  margin: auto;
 }
 .social-icons img{
   filter: invert(.5);
@@ -200,6 +201,7 @@ padding: 8px 4px;
   }
   .rectangle-card{
     min-width: 280px;
+    min-height: 150px;
   }
   .map-content svg{
     width: 100%;
@@ -207,5 +209,8 @@ padding: 8px 4px;
   }
   .header-texture {
     margin-top: 30px;
+  }
+  .char{
+    font-size: 9pt;
   }
 }
