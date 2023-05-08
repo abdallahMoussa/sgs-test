@@ -183,6 +183,12 @@ padding: 8px 4px;
 .content-pitchBook {
   padding-top: 100px;
 }
+.solutions-images{
+  padding-top: 14px;
+}
+.by-numbers{
+  margin-top: 5px;
+}
 }
 
 @media screen and (max-width:640px) {
