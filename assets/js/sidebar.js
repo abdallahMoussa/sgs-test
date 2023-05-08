@@ -31,4 +31,14 @@ $(document).ready(function () {
   $('.nav-four').click(function () {
     $('.nav-four-content').slideToggle();
   });
+
+  $('#language').click(()=>{
+    if($('#language').attr('title') == "Germany"){
+      $('#language').attr('src',"assets/images/united-kingdom.png");
+      $('#language').attr('title',"English");
+    }else{
+      $('#language').attr('src',"assets/images/germany.png");
+      $('#language').attr('title',"Germany");
+    }
+  })
 });
