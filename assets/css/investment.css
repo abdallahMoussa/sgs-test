@@ -183,12 +183,7 @@ padding: 8px 4px;
   padding-top: 100px;
 }
 }
-@media screen and (max-width:750px) {
-  .bg-pitchBook{
-    padding-top: 500px;
-    /* height: 6000px; */
-  }
-}
+
 @media screen and (max-width:640px) {
   .investment{
     top: 10vw;
@@ -201,7 +196,7 @@ padding: 8px 4px;
     height: 6400px;
   }
   .content-pitchBook {
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .rectangle-card{
     min-width: 100%;
@@ -209,5 +204,8 @@ padding: 8px 4px;
   .map-content svg{
     width: 100%;
     margin-left: -50px;
+  }
+  .header-texture {
+    margin-top: 30px;
   }
 }
