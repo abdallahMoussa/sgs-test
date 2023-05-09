@@ -71,7 +71,6 @@ body {
   width: calc(46% + 20px);
   margin: 10px;
   min-width: 580px;
-  margin: auto;
 }
 .social-icons img{
   filter: invert(.5);
@@ -86,7 +85,6 @@ body {
 #chartdiv {
   width: 50%;
   margin: auto;
-  /* height: 500px; */
 }
 #map path{
   opacity: .6;
@@ -167,6 +165,50 @@ padding: 8px 4px;
   background-color: #ededed;
   padding: 10px 15px;
   transform: scale(1.2);
+}
+
+
+
+@media screen and (min-width:1400px) {
+  .bg-pitchBook{
+    height: 3000px;
+  }
+
+}
+@media screen and (min-width:1800px) {
+  .bg-pitchBook{
+    height: 3600px;
+  }
+
+
+}
+
+@media screen and (min-width:2100px) {
+  .bg-pitchBook{
+    height: 4000px;
+  }
+}
+@media screen and (min-width:2550px) {
+  .bg-pitchBook{
+    height: 4800px;
+  }
+}
+@media screen and (min-width:3200px) {
+  .bg-pitchBook{
+    height: 6000px;
+  }
+  .card-cont span {
+    font-size: 40pt;
+    line-height: 50px;
+  }
+  .card-cont b{
+    font-size: 60pt;
+  }
+}
+@media screen and (min-width:4250px) {
+  .bg-pitchBook{
+    height: 8000px;
+  }
 }
 @media screen and (max-width:1260px) {
   .bg-pitchBook{
