@@ -72,12 +72,12 @@ body {
   margin: 10px;
   min-width: 580px;
 }
-.social-icons img{
+.social-icons img:not(#language){
   filter: invert(.5);
   transition: .3s;
-
 }
-.social-icons img:hover{
+
+.social-icons img:hover:not(#language){
   filter: invert(1);
   cursor: pointer;
   transition: .5s;
@@ -167,6 +167,16 @@ padding: 8px 4px;
   transform: scale(1.2);
 }
 
+#myChart{
+  border: 2px solid rgb(156, 7, 7);
+  padding: 5px 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+
+}
+#myChart{
+  width: 100%;
+}
 
 
 @media screen and (min-width:1400px) {
