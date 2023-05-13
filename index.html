@@ -1,222 +1,260 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/css/sidebar.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="assets/js/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/script.js"></script>
 
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/sidebar.js"></script>
-        <title>SGS</title>
-    </head>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <title>SGS</title>
+  </head>
 
-    <body>
-        <header class="w-full flex justify-between h-16 z-10 pt-7 px-10 header-nav">
-            <div class="logo w-20">
-                <img id="logo" src="assets/images/logo.png" />
-            </div>
-            <div class="side-nav flex">
-                <div class="button mr-10">
-                    <a
-                        id="login"
-                        class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-6 py-2 text-xs block font-thin rounded-lg shadow-md"
-                        >Login</a
-                    >
-                </div>
-                <div class="menu">
-                    <span
-                        class="side-toogleer text-2xl text-slate-900 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
-                        >☰</span
-                    >
-                </div>
-            </div>
-        </header>
+  <body>
+    <header
+      class="w-full flex justify-between h-16 absolute z-10 pt-7 px-10 header-nav fixed-top"
+      style="position: fixed"
+    >
+      <div class="logo w-20">
+        <a href="index.html"><img id="logo" src="assets/images/logo.png" /></a>
+      </div>
+      <div class="side-nav flex items-center">
+        <a class="nav-link" href="career.html">Career</a>
 
-        <aside class="side-bar">
-            <div class="close-container">
-                <span class="bar-closer"> &times;</span>
-            </div>
-
-            <ol>
-                <li class="side-link">
-                    <div class="nav-main nav-one">
-                        <h6 class="">DaaS-SERVICES</h6>
-                        <svg
-                            sidebar-toggle-item
-                            class="arrow w-6 h-6"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd"
-                                color="#fff"
-                            ></path>
-                        </svg>
-                    </div>
-                    <ul id="dropdown-example" class="hidden nav-links nav-one-content">
-                        <li>
-                            <a href="#">Solutions</a>
-                        </li>
-                        <li>
-                            <a href="#">SGS ONE</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="side-link">
-                    <div class="nav-main nav-two">
-                        <h6 class="">PARTNERSHIP</h6>
-                        <svg
-                            sidebar-toggle-item
-                            class="arrow w-6 h-6"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd"
-                                color="#fff"
-                            ></path>
-                        </svg>
-                    </div>
-                    <ul id="dropdown-example" class="hidden nav-links nav-two-content">
-                        <li>
-                            <a href="#">Partnership program</a>
-                        </li>
-                        <li>
-                            <a href="#">Apply for partnership</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="side-link">
-                    <div class="nav-main nav-three">
-                        <h6 class="">CAREER</h6>
-                        <svg
-                            sidebar-toggle-item
-                            class="arrow w-6 h-6"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd"
-                                color="#fff"
-                            ></path>
-                        </svg>
-                    </div>
-                    <ul id="dropdown-example" class="hidden nav-links nav-three-content">
-                        <li>
-                            <a href="#">Open positions</a>
-                        </li>
-                        <li>
-                            <a href="/careers.html">General Application</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="side-link">
-                    <div class="nav-main nav-four">
-                        <h6 class="">ABOUT US</h6>
-                        <svg
-                            sidebar-toggle-item
-                            class="arrow w-6 h-6"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd"
-                                color="#fff"
-                            ></path>
-                        </svg>
-                    </div>
-                    <ul id="dropdown-example" class="hidden nav-links nav-four-content">
-                        <li>
-                            <a href="#">About SGS</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog & News</a>
-                        </li>
-                        <li>
-                            <a href="#">Team</a>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-        </aside>
-
-        <div id="heading" class="text-center mt-20">
-            <h2 class="text-5xl font-semibold">Department as a Solution</h2>
-            <p class="max-w-3xl m-auto text-2xl mt-5 font-thin">
-                Helping Businesses expand into markets, find matching talent and office space
-                without creating a new business entity.
-            </p>
+        <div class="button mr-10">
+          <a href="login.html"
+            id="login"
+            class="bg-red-700 text-white cursor-pointer hover:bg-red-600 duration-300 px-4 py-2 text-xs block font-thin rounded-lg shadow-lg shadow-black"
+            >Login</a
+          >
         </div>
+        <div class="menu">
+          <span
+            class="side-toogleer text-2xl text-slate-100 drop-shadow-lg cursor-pointer hover:text-red-800 duration-300"
+            style="color: #000"
+            >☰</span
+          >
+        </div>
+      </div>
+    </header>
 
-        <div class="hex-container mt-10 m-auto text-center">
-            <div class="main-hex m-auto group">
-                <a href="categories.html">
-                    <img
-                        class="main-hex-img absolute w-40 left-1/2 translate-x-[-80px] top-1/2"
-                        src="./assets/images/vector3.png"
-                        alt="main logo"
-                    />
-                </a>
-                <a href="sgs-one/index.html">
-                    <img
-                        class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[-120px] -translate-y-60 top-1/2"
-                        src="./assets/images/Mask1.png"
-                        alt="1"
-                    />
-                </a>
-                <a href="./careers.html">
-                    <img
-                        class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[60px] -translate-y-36 top-1/2"
-                        src="./assets/images/Mask2.png"
-                        alt="2"
-                    />
-                </a>
+    <aside class="side-bar">
+      <div class="close-container">
+        <span class="bar-closer"> &times;</span>
+      </div>
 
-                <img
-                    class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[60px] translate-y-16 top-1/2"
-                    src="./assets/images/Mask3.png"
-                    alt="3"
-                />
-                <a href="office.html">
-                    <img
-                        class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[-120px] translate-y-40 top-1/2"
-                        src="./assets/images/Mask4.png"
-                        alt="4"
-                    />
-                </a>
-                <img
-                    class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[-300px] translate-y-16 top-1/2"
-                    src="./assets/images/Mask5.png"
-                    alt="5"
-                />
-                <a href="video.html">
-                    <img
-                        class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[-300px] -translate-y-36 top-1/2"
-                        src="./assets/images/Mask6.png"
-                        alt="6"
-                    />
-                </a>
-            </div>
+      <ol>
+        <li class="side-link">
+          <div class="nav-main nav-one">
+            <h6>ABOUT US</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-one-content">
+            <li>
+              <a href="about.html">About SGS</a>
+            </li>
+            <li>
+              <a href="sector-excellence.html">Sector Of Excellence</a>
+            </li>
+            <li>
+              <a href="#">Mission & Vision</a>
+            </li>
+            <li>
+              <a href="#">Our Team</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">VLOG-SGS Video Wall</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="side-link">
+          <div class="nav-main nav-two">
+            <h6 class="">CAREER</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-two-content">
+            <li>
+              <a href="career.html">Our Process</a>
+            </li>
+            <li>
+              <a href="career.html">Job Opportunities</a>
+            </li>
+            <li>
+              <a href="careers.html" class="text-dark">General Application</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-three">
+            <h6 class="">PARTNERSHIP</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-three-content">
+            <li>
+              <a href="partnership.html">Partnership Executive Summary</a>
+            </li>
+            <li>
+              <a href="partnership.html">Partnership program</a>
+            </li>
+            <li>
+              <a href="#">Channel Program</a>
+            </li>
+            <li>
+              <a href="partnership.html#apply-partnership">Apply for partnership</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-link">
+          <div class="nav-main nav-four">
+            <h6 class="">Investment</h6>
+            <svg
+              sidebar-toggle-item
+              class="arrow w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+                color="#000"
+              ></path>
+            </svg>
+          </div>
+          <ul id="dropdown-example" class="hidden nav-links nav-four-content">
+            <li>
+              <a href="#">Investor's Corner</a>
+            </li>
+            <li>
+              <a href="#">Investors NDA Signup</a>
+            </li>
+            <li>
+              <a href="#">Investment Teaser</a>
+            </li>
+            <li>
+              <a href="#">Investor's Roadmap</a>
+            </li>
+            <li>
+              <a href="investment.html">Investment Presentation</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+    <div id="heading" class="text-center pt-20">
+      <h2 class="text-5xl font-semibold">Department as a Solution</h2>
+      <p class="max-w-3xl m-auto text-2xl mt-5 font-thin">
+        Helping Businesses expand into new markets, find matching talent and office space without creating a new business entity
+      </p>
+    </div>
 
-            <!-- <div class="wheel-cont" id="wheel-cont">
+    <div class="hex-container mt-10 m-auto text-center">
+      <div class="main-hex m-auto group">
+        <a href="categories.html">
+          <img
+            class="main-hex-img absolute w-40 left-1/2 translate-x-[-80px] top-1/2"
+            src="./assets/images/vector3.png"
+            alt="main logo"
+          />
+        </a>
+        <a href="sgs-one/index.html">
+          <img
+            class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[-120px] -translate-y-60 top-1/2"
+            src="./assets/images/Mask1.png"
+            alt="1"
+          />
+        </a>
+        <a href="careers.html">
+          <img
+            class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[60px] -translate-y-36 top-1/2"
+            src="./assets/images/Mask2.png"
+            alt="2"
+          />
+        </a>
+        <a href="administration.html">
+          <img
+            class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[60px] translate-y-16 top-1/2"
+            src="./assets/images/Mask3.png"
+            alt="3"
+          />
+        </a>
+        <a href="office.html">
+          <img
+            class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[-120px] translate-y-40 top-1/2"
+            src="./assets/images/Mask4.png"
+            alt="4"
+          />
+        </a>
+        <a href="fleet-manage.html">
+          <img
+            class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[-300px] translate-y-16 top-1/2"
+            src="./assets/images/Mask5.png"
+            alt="5"
+          />
+        </a>
+        <a href="video.html">
+          <img
+            class="hex-surround w-60 scale-125 absolute left-1/2 hidden translate-x-[-300px] -translate-y-36 top-1/2"
+            src="./assets/images/Mask6.png"
+            alt="6"
+          />
+        </a>
+      </div>
+      
+      <!-- <div class="wheel-cont" id="wheel-cont">
             <div class="col col1">
                 <div class="hexa">
                     <a href="#">
@@ -261,97 +299,144 @@
                 </div>
             </div>
         </div> -->
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-container flex items-center justify-between px-10">
+        <div class="left-part">
+          <ul class="contact-detail">
+            <li>
+              <a href="tel:+385 1 353 5930"><img src="./assets/images/social-icons/phone.png" class="img-fluid mr-2">+385 1 353 5930</a>
+            </li>
+            <li>
+              <a href="tel:+385 91 557 36 24"><img src="./assets/images/social-icons/mobile.png" class="img-fluid mr-2">+385 91 557 36 24</a>
+            </li>
+            <li>
+              <a href="mailto:business@sgs-daas.com"><img src="./assets/images/social-icons/mail.png" class="img-fluid mr-2">business@sgs-daas.com</a>
+            </li>
+          </ul>
         </div>
-    </body>
-    <script>
-        const mainHexImage = document.querySelector(".main-hex-img");
-        const hexSurround = document.querySelectorAll(".hex-surround");
-        const heading = document.querySelector("#heading");
+        <div class="right-part">
+          <ul class="social-detail">
+            <li>
+              <a >
+                <img id="language" title="Germany"
+                    class="w-7 cursor-pointer -mt-[3px] hover:scale-105 duration-300 hover:drop-shadow-lg"
+                    src="assets/images/germany.png" />
+              </a>
+             </li>
+            <li>
+              <a href="#"><img src="./assets/images/social-icons/facebook.png" class="img-fluid"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/social-icons/instagram.png" class="img-fluid"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/social-icons/youtube.png" class="img-fluid"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/social-icons/linkedin.png" class="img-fluid"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/social-icons/twitter.png" class="img-fluid"></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/social-icons/tiktok.png" class="img-fluid"></a>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const mainHexImage = document.querySelector('.main-hex-img');
+    const hexSurround = document.querySelectorAll('.hex-surround');
+    const heading = document.querySelector('#heading');
 
-        let hoveredOnAnyOne = false;
+    let hoveredOnAnyOne = false;
 
-        // on hovering the main middle image
-        mainHexImage?.addEventListener("mouseover", () => {
-            hoveredOnAnyOne = true;
+    // on hovering the main middle image
+    mainHexImage?.addEventListener('mouseover', () => {
+      hoveredOnAnyOne = true;
 
-            heading.classList.add("hidden"); // heading will be hidden
-            mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
-            mainHexImage.classList.add("scale-150");
+      heading.classList.add('hidden'); // heading will be hidden
+      mainHexImage.setAttribute('src', './assets/images/vector3-hover.png'); // changing the main image to red coloured
+      mainHexImage.classList.add('scale-150');
 
-            hexSurround.forEach((element) => {
-                element.classList.remove("hidden");
-            });
-        });
-        mainHexImage?.addEventListener("mouseout", () => {
-            hoveredOnAnyOne = false;
+      hexSurround.forEach(element => {
+        element.classList.remove('hidden');
+      });
+    });
+    mainHexImage?.addEventListener('mouseout', () => {
+      hoveredOnAnyOne = false;
 
-            heading.classList.remove("hidden");
-            mainHexImage.setAttribute("src", "./assets/images/vector3.png");
-            mainHexImage.classList.remove("scale-150");
+      heading.classList.remove('hidden');
+      mainHexImage.setAttribute('src', './assets/images/vector3.png');
+      mainHexImage.classList.remove('scale-150');
 
-            // hexSurround.forEach((element) => {
-            //     element.classList.add("hidden")
-            // })
-        });
+      // hexSurround.forEach((element) => {
+      //     element.classList.add("hidden")
+      // })
+    });
 
-        hexSurround.forEach((element, i) => {
-            element.addEventListener("mouseover", () => {
-                hoveredOnAnyOne = true;
+    hexSurround.forEach((element, i) => {
+      element.addEventListener('mouseover', () => {
+        hoveredOnAnyOne = true;
 
-                mainHexImage.classList.add("scale-150");
-                heading.classList.add("hidden"); // heading will be hidden
-                const imagePath = element.getAttribute("src");
-                if (!imagePath.includes("Hover")) {
-                    element.setAttribute("src", imagePath.replace(".png", "Hover.png"));
-                }
-
-                mainHexImage.setAttribute("src", imagePath.replace(".png", "Coloured.png"));
-
-                hexSurround.forEach((ele, index) => {
-                    if (index != i) {
-                        ele.classList.add("blur-sm");
-                        ele.classList.add("opacity-40");
-                        // ele.classList.remove("hidden")
-                    }
-                });
-            });
-
-            element.addEventListener("mouseout", () => {
-                hoveredOnAnyOne = false;
-
-                mainHexImage.classList.remove("scale-150");
-                heading.classList.remove("hidden"); // heading will be hidden
-                mainHexImage.setAttribute("src", "./assets/images/vector3-hover.png"); // changing the main image to red coloured
-                // mainHexImage.classList.add("scale-150")
-
-                const imagePath = element.getAttribute("src");
-                if (imagePath.includes("Hover")) {
-                    element.setAttribute("src", imagePath.replace("Hover.png", ".png"));
-                }
-
-                hexSurround.forEach((ele, index) => {
-                    ele.classList.remove("blur-sm");
-                    ele.classList.remove("opacity-40");
-                });
-            });
-        });
-
-        function hideSurround() {
-            hexSurround.forEach((ele, index) => {
-                ele.classList.add("hidden");
-            });
+        mainHexImage.classList.add('scale-150');
+        heading.classList.add('hidden'); // heading will be hidden
+        const imagePath = element.getAttribute('src');
+        if (!imagePath.includes('Hover')) {
+          element.setAttribute('src', imagePath.replace('.png', 'Hover.png'));
         }
 
-        document.addEventListener("mouseover", (e) => {
-            if (
-                !e.target.classList.contains("hex-surround") &&
-                !e.target.classList.contains("main-hex-img")
-            ) {
-                hexSurround.forEach((ele, index) => {
-                    hideSurround();
-                });
-                mainHexImage.setAttribute("src", "./assets/images/vector3.png"); // changing the main image to red coloured
-            }
+        mainHexImage.setAttribute('src', imagePath.replace('.png', 'Coloured.png'));
+
+        hexSurround.forEach((ele, index) => {
+          if (index != i) {
+            ele.classList.add('blur-sm');
+            ele.classList.add('opacity-40');
+            // ele.classList.remove("hidden")
+          }
         });
-    </script>
+      });
+
+      element.addEventListener('mouseout', () => {
+        hoveredOnAnyOne = false;
+
+        mainHexImage.classList.remove('scale-150');
+        heading.classList.remove('hidden'); // heading will be hidden
+        mainHexImage.setAttribute('src', './assets/images/vector3-hover.png'); // changing the main image to red coloured
+        // mainHexImage.classList.add("scale-150")
+
+        const imagePath = element.getAttribute('src');
+        if (imagePath.includes('Hover')) {
+          element.setAttribute('src', imagePath.replace('Hover.png', '.png'));
+        }
+
+        hexSurround.forEach((ele, index) => {
+          ele.classList.remove('blur-sm');
+          ele.classList.remove('opacity-40');
+        });
+      });
+    });
+
+    function hideSurround() {
+      hexSurround.forEach((ele, index) => {
+        ele.classList.add('hidden');
+      });
+    }
+
+    document.addEventListener('mouseover', e => {
+      if (
+        !e.target.classList.contains('hex-surround') &&
+        !e.target.classList.contains('main-hex-img')
+      ) {
+        hexSurround.forEach((ele, index) => {
+          hideSurround();
+        });
+        mainHexImage.setAttribute('src', './assets/images/vector3.png'); // changing the main image to red coloured
+      }
+    });
+  </script>
 </html>
